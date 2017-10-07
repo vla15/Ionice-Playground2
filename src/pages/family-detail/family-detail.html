@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{family.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div padding>
+    You navigated here from <b>{{family.title}}</b>
+  </div>
+  <div padding>
+    {{family.note}}
+  </div>
+</ion-content>
