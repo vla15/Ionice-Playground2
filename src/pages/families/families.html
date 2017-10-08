@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button ion-button menuToggle right>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Families</ion-title>
@@ -9,9 +9,23 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let family of families" (click)="itemTapped(family)">
+    <ion-card
+      *ngFor="let family of families"
+      (click)="itemTapped(family)" text-center
+    >
+      <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Panda-puff..jpg"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{family.title}}
+          </ion-card-title>
+        <p>
+          POWARRRRRR
+        </p>
+      </ion-card-content>
+    </ion-card>
+<!--     <button ion-item *ngFor="let family of families" (click)="itemTapped(family)" text-center>
       <ion-icon [name]="family.icon" item-start></ion-icon>
       {{family.title}}
-    </button>
+    </button> -->
   </ion-list>
 </ion-content>

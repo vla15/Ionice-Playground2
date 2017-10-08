@@ -18,8 +18,10 @@ export class FamiliesPage {
 
     // Let's populate this page with some filler content for funzies
     this.familyNames = ['La', 'Lim', 'Hoang', 'Tam'];
+    
     this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
     'american-football', 'boat', 'bluetooth', 'build'];
+
     for (let i = 0; i < this.familyNames.length; i++) {
       this.families.push({
         title: this.familyNames[i],
